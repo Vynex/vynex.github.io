@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Montserrat;
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
+
+
+ul {
+    list-style-type:none
+}
+
+ul.links li {
+    background-color: red;
+    padding: 0 10%;
+    display: inline-block;
+}
+
+.vertical-center {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.fab {
+    margin-right: 6px;
+}
+
+hr {
+    width: 75%;
+    height: 1px;
+    margin: 50px auto;
+    background-color: white;
+    border: 0 none;
+}
+
+.btn-danger {
+    background-color: #e1306c;
+    border-color: #e1306c;
+}
+
+.btn-danger:hover {
+    background-color: #c13584;
+}
+
+.btn-secondary {
+    background-color: #6784eb;
+    border-color: #6784eb;
+}
+
+.btn-secondary:hover {
+    background-color: #7289DA;
+}
+
+button:focus {outline:0;}
+
+.navbar .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=B5B5B5');
+}
+
+.box {
+    margin-top: 30vh;
+}
+
+.link {
+    color: white;
+}
+.link:hover {
+    color: #e2e6ea;
+}
+
+.navbar-brand {
+    letter-spacing: 0.1em;
+}
+
+.inactive:hover {
+    border-bottom: 2px solid #dbdbdb;
+}
+
+
+.content {
+    position: relative;
+    font-weight: 600;
+    font-size: 10vw;
+}
+
+.content .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+  
+.content .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+}
