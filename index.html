@@ -1,63 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kushagra/Shukla</title>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <div class="container">   
-            <a class="navbar-brand mr-auto active" href="index.html">Kushagra/Shukla</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler" aria-controls="navToggler" aria-expanded="false" aria-label="Toggles Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <link id="page_favicon" href="assets/favicon.png" rel="icon" type="image/x-icon">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/ml11.css">
+    <link rel="stylesheet" href="styles/fullpage.css">
+</head>
+<body>
+    <header>
+        <ul class="title navLinks">
+            <li><a class="active home" href="#Home">Kushagra/Shukla</a></li>
+        </ul>
+        <nav>
+            <ul class="navLinks">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Technical Skills</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Links">Get in Touch</a></li>
+            </ul>
+        </nav>
+        <img class="avatar" src="assets/me.jpg">
+    </header>
 
-            <div class="collapse navbar-collapse ml-auto" id="navToggler">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item inactive">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item inactive">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item inactive">
-                        <a class="nav-link" href="links.html">Links</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav nav-flex-icons mx-2">
-                    <li class="nav-item avatar">
-                        <a class="nav-link p-0 disabled" href="#">
-                            <img src="assets/avatar.jpg" class="rounded-circle z-depth-0" height="35">
-                        </a>
-                    </li>
-                </ul>
+    <div id="fullpage">
+        <div class="section">
+            <div class="content">
+                <h1 class="movingLetters">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span>
+                        <span class="letters">Hey There</span>
+                    </span>
+                </h1>
             </div>
         </div>
-    </nav>
 
-  </head>
-  <body>
+        <div class="section">
+            <div class="content">
+                This is a little bit About Me
+            </div>
+        </div>
 
-    <div class="container box">
-        <h2 class="content">
-            <span class="text-wrapper">
-                <span class="letters">Hey There,</span>
-            </span>
-        </h2>
+        <div class="section">
+            <div class="content">
+                Space for Skills
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content">
+                Space for Portfolio
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content">
+                Space for Contact
+            </div>
+        </div>
     </div>
-
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="script.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+    <script src="scripts/ml11.js"></script>
+    <script src="scripts/fullpage.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
 </html>
