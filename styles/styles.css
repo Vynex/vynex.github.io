@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,6 +17,7 @@ body {
 .container {
     width: 80%;
     height: 100%;
+    margin: auto;
 
     display: flex;
     flex-direction: column;
@@ -39,8 +41,6 @@ body {
 
 .about {
     height: 100%;
-    display: flex;
-    justify-content: center;
 
     font-family: "Oswald";
     color: #FFFFFF;
@@ -60,6 +60,47 @@ body {
 
 .textContent {
     margin: 40px 0;
+}
+
+.skillTitle {
+    font-family: "Montserrat";
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 1.7em;
+    letter-spacing: 0.2em;
+}
+
+.skill {
+    background-color: #f88f01;
+    padding: 20px 200px;
+    font-size: 1em;
+}
+
+.skill1 {
+    font-size: 4em;
+    text-align: center;
+
+    margin: 5px;
+    margin-bottom: 25px;
+}
+
+.skill2 {
+    font-size: 4em;
+    text-align: center;
+
+    margin: 5px;
+    margin-top: 25px;
+}
+
+.skill1 i, .skill2 i {
+    padding: 20px;
+}
+
+.devicon-photoshop-line.colored {
+    color: #0077BF;
+}
+.devicon-linux-plain {
+    color: #333232;
 }
 
 .contact {
@@ -96,14 +137,14 @@ body {
     border-radius: 25px;
 }
 
-i {
+.links i {
     font-size: 1.5em;
     color: #FFFFFF;
     padding: 5px;
 
     transition: all 200ms ease;
 }
-i:hover {
+.links i:hover {
     color: #000000;
 }
 
@@ -116,5 +157,11 @@ i:hover {
     }
     .imgContainer {
         width: 80%;
+    }
+    .skill {
+        padding: 20px;
+    }
+    .skill1 i, .skill2 i {
+        padding: 0;
     }
 }
