@@ -1,0 +1,136 @@
+nav {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 8vh;
+    padding: 5px 7.5%;
+
+    position: fixed;
+    z-index: 1;
+}
+
+.navlink {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navlink li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.brand {
+    letter-spacing: 0.1em;
+    font-weight: 400 !important;
+    font-size: 1.5em !important;
+    color: #000000 !important;
+    border-bottom: 2px solid #000000;
+}
+
+.brand:hover {
+    color: #4A4A4B !important;
+    border-bottom: 2px solid #4A4A4B !important;
+}
+
+.navlink a {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    color: #7C7C7D;
+    
+    text-decoration: none;
+    padding-bottom: 0.3rem;
+    transition: all 250ms ease 0s;
+}
+
+.navlink li a:hover {
+    color: #4A4A4B;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+}
+
+.burger span{
+    width: 20px;
+    height: 2px;
+    background-color: #7C7C7D;
+    border-radius: 2px;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .collapsable{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        width: 45%;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .collapsable li{
+        padding: 8vh 10px;
+    }
+
+    .collapsable li{
+        text-align: center;
+        opacity: 0;
+    }
+
+    .burger, .burger span {
+        display: block;
+    }
+}
+
+.navActive {
+    transform: translateX(0%);
+}
+
+@keyframes navLinksAnim {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .l1 {
+    transform: rotate(-45deg) translate(-3px, 4px);
+}
+
+.toggle .l2 {
+    opacity: 0;
+}
+
+.toggle .l3 {
+    transform: rotate(45deg) translate(-3px, -4px);
+}

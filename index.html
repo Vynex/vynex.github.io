@@ -6,35 +6,41 @@
     <title>Kushagra/Shukla</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-
-    <link rel="stylesheet" href="styles/styles.css">
+    
     <link rel="stylesheet" href="styles/ml11.css">
     <link rel="stylesheet" href="styles/fullpage.css">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/nav.css">
 </head>
 <body>
+
     <header>
-        <ul class="title navLinks">
-            <li><a class="active home" href="#Home">Kushagra/Shukla</a></li>
-        </ul>
         <nav>
-            <ul class="navLinks collapsable">
+            <ul class="navlink">
+                <li><a href="#Home" class="brand">Kushagra/Shukla</a></li>
+            </ul>
+        
+            <ul class="navlink collapsable">
                 <li><a href="#About">About</a></li>
-                <li><a href="#Skills">Technical Skills</a></li>
+                <li><a href="#Skills">Skills</a></li>
                 <li><a href="#Portfolio">Portfolio</a></li>
                 <li><a href="#Links">Get in Touch</a></li>
+                <img class="avatar" src="assets/me.jpg">
             </ul>
+        
             <div class="burger">
-                <div class="l1"></div>
-                <div class="l2"></div>
-                <div class="l3"></div>
+                <span class="l1"></span>
+                <span class="l2"></span>
+                <span class="l3"></span>
             </div>
         </nav>
-        <img class="avatar" src="assets/me.jpg">
     </header>
+    
 
     <div id="fullpage">
         <div class="section">
-            <div class="content splash">
+            <div class="splash">
                 <h1 class="movingLetters">
                     <span class="text-wrapper">
                         <span class="line line1"></span>
@@ -45,8 +51,23 @@
         </div>
 
         <div class="section">
-            <div class="content">
-                This is a little bit About Me
+            <div class="about">
+                <div class="container">
+                    <div class="imgContainer">
+                        <img src="assets/about.jpg" alt="me" class="aboutIMG">
+                    </div>
+                    <div class="textContent">
+                        <p>
+                            I am a 20 year old Software Developer based in Bhopal.
+                            Currently in my second year of College pursuing <b>B. Tech in Computer Science.</b>
+                            I find Computers fascinating and it is my passion that keeps pushing me to excel at my work.
+                            I'm still learning but feel free to drop a hi if you find any of my stuff interesting.
+                        </p>
+                        <p>
+                            Outside of my work, I adore Cats and find comfort in Video Games.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -63,12 +84,21 @@
         </div>
 
         <div class="section">
-            <div class="content">
-                Space for Contact
+            <div class="contact">
+                <div class="container">
+                    <p>Would love to hear from you</p>
+                    <a href="mailto:kushagra100910@gmail.com" class="email">Contact</a>
+                    <span class="links">
+                        <a href="https://github.com/Vynex"><i class="bi bi-github"></i></a>
+                        <a href="https://t.me/vynex"><i class="bi bi-telegram"></i></a>
+                        <a href="https://instagram.com/kushagra.jpg"><i class="bi bi-instagram"></i></a>
+                        <a href="https://twitter.com/kushagra_txt"><i class="bi bi-twitter"></i></a>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
-
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="scripts/ml11.js"></script>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 * {
     box-sizing: border-box;
@@ -7,150 +8,113 @@
     padding: 0;
 }
 
-li, a {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash {
+    color: #FFFFFF;
     font-family: "Montserrat";
     font-weight: 500;
-    font-size: 16px;
-    color: #7C7C7D;
-    text-decoration: none;
-    padding-bottom: 0.3rem;
-}
-
-header {
-    background-color: white;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 5px 7.5%;
-    width: 100%;
-    height: 8vh;
-    position: fixed;
-    z-index: 1;
-}
-
-.home {
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.title {
-    letter-spacing: 0.1em;
-    margin-right: auto;
-}
-
-.navLinks {
-    list-style: none;
-}
-
-.navLinks li {
-    color: #DBDBDB;
-    display: inline-block;
-    padding: 0 10px;
-}
-
-.navLinks li a {
-    transition: all 0.3s ease 0s;
-}
-
-.navLinks li a:hover {
-    color: #4A4A4B;
-    border-bottom: 2px solid #dbdbdb;
-}
-
-.active {
-    color: #000000;
-    border-bottom: 2px solid black;
-}
-
-.avatar {
-    margin-left: 20px;
-    border-radius: 50%;
-    border: 2px solid white;
-    width: 50px;
-    height: 50px;
+    text-align: center;
 }
 
 .content {
     text-align: center;
-    color: white;
+    color: #FFFFFF;
     font-family: "Montserrat";
     font-weight: 500;
 }
 
 .about {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
     font-family: "Oswald";
-    text-align: left;
+    color: #FFFFFF;
+    text-align: center;
     font-weight: 300;
-    font-size: 1.5vw;
+    font-size: 1.5em;
 }
 
-.splash {
-    font-size: 1vw;
+.imgContainer {
+    width: 20%;
 }
 
-.burger div{
-    width: 20px;
-    height: 2.5px;
-    background-color: #7C7C7D;
-    margin: 3px;
-    transition: all 0.3s ease;
+.aboutIMG {
+    max-width: 100%;
+    border-radius: 50%;
 }
 
-.burger {
-    display: none;
-    cursor: pointer;
+.textContent {
+    margin: 40px 0;
+}
+
+.contact {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    font-family: "Oswald";
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.links {
+    margin: 15px;
+    border-top: 2px solid #FFFFFF;
+}
+
+.email {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 15px;
+    padding: 5px 15px;
+    border: 1px solid #FFFFFF;
+
+    transition: all 200ms ease-in;
+}
+
+.email:hover {
+    background-color: #FFFFFF;
+    color: #4caf50;
+    border-radius: 25px;
+}
+
+i {
+    font-size: 1.5em;
+    color: #FFFFFF;
+    padding: 5px;
+
+    transition: all 200ms ease;
+}
+i:hover {
+    color: #000000;
 }
 
 @media screen and (max-width: 900px) {
-    .collapsable{
-        position: absolute;
-        right: 0;
-        height: 92vh;
-        top: 8vh;
-        width: 45%;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
+    .splash {
+        font-size: 2vw;
     }
-    .collapsable li{
-        padding: 8vh 10px;
+    .about {
+        font-size: 1em;
     }
-
-    .collapsable li{
-        opacity: 0;
+    .imgContainer {
+        width: 80%;
     }
-
-    .burger {
-        display: block;
-    }
-}
-
-.navActive {
-    transform: translateX(0%);
-}
-
-@keyframes navLinksAnim {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .l1 {
-    transform: rotate(-45deg) translate(-3px, 5px);
-}
-
-.toggle .l2 {
-    opacity: 0;
-}
-
-.toggle .l3 {
-    transform: rotate(45deg) translate(-3px, -5px);
 }
