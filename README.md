@@ -1,5 +1,5 @@
-# vynex.github.io
-Cover Website. 2020
+# My Cover Website :spider_web:
 
+> Hosted Using GitHub Pages. :thread:
 
-Incomplete as of now.
+> [vynex.github.io](https://vynex.github.io/)
