@@ -45,6 +45,7 @@ body {
     font-family: "Oswald";
     color: #FFFFFF;
     text-align: center;
+    letter-spacing: 0.1em;
     font-weight: 300;
     font-size: 1.5em;
 }
@@ -71,30 +72,25 @@ body {
 }
 
 .skill {
-    background-color: #f88f01;
-    padding: 20px 200px;
-    font-size: 1em;
-}
+    background-color: #ee712b;
 
-.skill1 {
-    font-size: 4em;
+    padding: 0 150px;
     text-align: center;
-
-    margin: 5px;
-    margin-bottom: 25px;
-}
-
-.skill2 {
     font-size: 4em;
-    text-align: center;
-
-    margin: 5px;
-    margin-top: 25px;
 }
 
-.skill1 i, .skill2 i {
-    padding: 20px;
+.skill i {
+    display: inline-block;
+    padding: 20px 10px;
+
+    text-shadow: 2px 2px 5px #ff5722;
+    transition: all 200ms ease;
 }
+
+.skill i:hover {
+    transform: translateY(-5%);
+}
+
 
 .devicon-photoshop-line.colored {
     color: #0077BF;
@@ -158,10 +154,8 @@ body {
     .imgContainer {
         width: 80%;
     }
+
     .skill {
-        padding: 20px;
-    }
-    .skill1 i, .skill2 i {
         padding: 0;
     }
 }
