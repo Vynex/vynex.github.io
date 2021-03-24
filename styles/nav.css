@@ -106,9 +106,13 @@ nav {
     .burger, .burger span {
         display: block;
     }
+
+    .avatar {
+        opacity: 0;
+    }
 }
 
-.navActive {
+.nav-active {
     transform: translateX(0%);
 }
 
