@@ -81,13 +81,15 @@ body {
     padding: 0 150px;
     text-align: center;
     font-size: 4em;
+    user-select: none;
 }
 
 .skill i {
     display: inline-block;
+    margin: 0.2rem 0.6rem;
     padding: 20px 10px;
 
-    text-shadow: 0px 1px 2px #1e212d;
+    text-shadow: 1px 1px 5px #1e212d;
     transition: all 200ms ease;
 }
 
